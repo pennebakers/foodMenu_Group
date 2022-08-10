@@ -7,7 +7,7 @@ import { Food } from './food';
   providedIn: 'root'
 })
 export class FoodService {
-  private baseURL = "http://localhost:8080/api/v1/foods"
+  private baseURL = "http://localhost:8080/api/v1/foodmenu"
   constructor(private httpClient: HttpClient) { }
 
   getFoodsList(): Observable<Food[]>{
