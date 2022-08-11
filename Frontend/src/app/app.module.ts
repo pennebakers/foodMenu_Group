@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { DrinkListComponent } from './drink-list/drink-list.component';
 import { FoodListComponent } from './food-list/food-list.component';
 import { MenuComponent } from './menu/menu.component';
+import { CreateFoodComponent } from './create-food/create-food.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FoodListComponent,
-    DrinkListComponent
+    DrinkListComponent,
+    CreateFoodComponent
   ],
   imports: [
     BrowserModule,
