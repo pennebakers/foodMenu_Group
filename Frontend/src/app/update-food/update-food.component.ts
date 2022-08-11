@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FoodService } from '../food-service';
+import { Food } from '../food';
+import { ActivatedRoute, Router } from '@angular/router';
+
 import { ActivatedRoute, Router } from '@angular/router';
 import { Food } from '../food';
 import { FoodService } from '../food-service';
@@ -10,7 +14,6 @@ import { FoodService } from '../food-service';
 })
 export class UpdateFoodComponent implements OnInit {
 
- 
   id!: number;
   food: Food = new Food();
   constructor(private foodService: FoodService,
@@ -27,6 +30,15 @@ export class UpdateFoodComponent implements OnInit {
   }
 
   onSubmit(){
+    this.foodService.updateFood(this.id, this.food).subscribe( data =>{
+      this.goToFoodList();
+    }
+    , error => console.log(error));
+
+
+  }
+
+  onSubmit(){
     this.foodService.updateFood(this.id, this.food).subscribe(data => {
       console.log(data);
       this.goToFoodList();
@@ -35,6 +47,10 @@ export class UpdateFoodComponent implements OnInit {
 
   goToFoodList(){
     this.router.navigate(['/employees']);
+
   }
 
+  goToFoodList(){
+    this.router.navigate(['/foods']);
+  }
 }
