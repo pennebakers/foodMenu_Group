@@ -27,5 +27,20 @@ export class FoodListComponent implements OnInit {
     })
   }
 
+  updateFood(id: number){
+    this.router.navigate(['update-food', id]);
+  } 
+
+  deleteFood(id: number){
+    this.foodService.deleteFood(id).subscribe(data => {
+      console.log(data);
+      this.getFoodsList();
+    })
+  }
+
+  foodDetails(id: number){
+    this.router.navigate(['food-details', id]);
+  }
+
 
 }
