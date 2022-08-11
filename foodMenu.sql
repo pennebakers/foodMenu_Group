@@ -1,0 +1,23 @@
+insert into foodMenu (itemType, itemName, itemDescription, price)
+values 
+("entree", "Cowboy burger", "tomatoes, mayo, ketchup", "3.54"),
+("entree", "Broadway pizza", "peperoni, mushroom, usage, black olives", "7.33"),
+("entree", "Winged  perfection", "chicken wing, 12 piece, cayenne pepper, hot sauce, butter", "8.25"),
+("entree", "Filet mignon", "slice filet mignon, polyclinic onions,wild mushroom, fig essence", "14.20"),
+("entree", "Buffalo Crispy Chicken Strips & Fries", "Five buttermilk crispy chicken strips made with all-natural chicken & tossed in sauce", "13.19"),
+("entree", "Chicken & Veggie Salad", "Freshly grilled or crispy chicken breast, fresh sliced tomato, red onions, avocado & mushrooms", "17.33"),
+("entree", "Philly Cheese Steak Stacker", "Philly comes to you with grilled sirloin steak & onions topped with melted American cheese", "16.25"),
+("entree", "Ham & Egg Melt", "Black forest ham, fried egg & American cheese on grilled, thick-cut bread", "11.20"),
+("entree", "Cowboy burger", "tomatoes, mayo, ketchup", "3.54"),
+("entree", "Broadway pizza", "peperoni, mushroom, usage, black olives", "7.33"),
+("entree", "Winged  perfection", "chicken wing, 12 piece, cayenne pepper, hot sauce, butter", "8.25"),
+("side", "Fancy french fries", "fried potatoes", "2.11"),
+("side", "Creamy mash potatoes", "garlic , butter, salt, potatoes", "1.31"),
+("side", "Seasonal Fresh Fruit", "assorted fruit from local farmers marker", "5.11"),
+("side", "Sharp Cheddar Mac & Cheese", "traditional recipe with parmesan chicken", "4.32"),
+("side", "Spinach & Artichoke Dip", "Creamy spinach, roasted garlic, artichoke, crispy parmesan flatbread ", "9.11"),
+("side", "Calamari", "Crispy calamari, pepperoncini, arrabbiata, lemon aioli", "11.35"),
+("dessert", "Creme brulee", "burnt cream, vanilla, sugar, eggs", "4.40"),
+("dessert", "Pagoda", "fig, vanilla bean, pistachio, daily special ice-cream", "8.00"),
+("dessert", "Strawberries & Cream Crepes", "Four delicate crepes topped with glazed strawberries & vanilla cream drizzle", "9.40"),
+("dessert", "Chocolate Cake", "Super moist semi-sweet chocolate cake topped with silky chocolate buttercream", "8.00");s
