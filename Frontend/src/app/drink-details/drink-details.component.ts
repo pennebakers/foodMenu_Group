@@ -19,7 +19,7 @@ export class DrinkDetailsComponent implements OnInit {
     this.id = this.route.snapshot.params['id'];
 
     this.drink = new Drink();
-    this.drinkService.getDrinkById(this.id).subscribe( data => {
+    this.drinkService.getDrinkById(this.id).subscribe( (data: Drink) => {
       this.drink = data;
     });
   }
