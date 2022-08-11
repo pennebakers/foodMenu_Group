@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class FoodListComponent implements OnInit {
 
-  foods!: Food[];
+  foods: Food[] | undefined;
 
   constructor(private foodService: FoodService,
     private router: Router) { }
@@ -22,6 +22,7 @@ export class FoodListComponent implements OnInit {
   private getFoodsList(){
     this.foodService.getFoodsList().subscribe(data => {
       console.log(data);
+      console.log("were getting foods List");
       this.foods = data;
     })
   }
