@@ -19,7 +19,7 @@ public class FoodMenuController {
         private FoodMenuRepository foodMenuRepository;
 
         @GetMapping("/foodmenu")
-    public List<FoodMenu> getAllFoodMenu() {
+        public List<FoodMenu> getAllFoodMenu() {
             return foodMenuRepository.findAll();
         }
 }
