@@ -3,6 +3,10 @@ import { FoodService } from '../food-service';
 import { Food } from '../food';
 import { ActivatedRoute, Router } from '@angular/router';
 
+import { ActivatedRoute, Router } from '@angular/router';
+import { Food } from '../food';
+import { FoodService } from '../food-service';
+
 @Component({
   selector: 'app-update-food',
   templateUrl: './update-food.component.html',
@@ -22,6 +26,7 @@ export class UpdateFoodComponent implements OnInit {
     this.foodService.getFoodById(this.id).subscribe(data => {
       this.food = data;
     }, error => console.log(error));
+
   }
 
   onSubmit(){
@@ -29,6 +34,20 @@ export class UpdateFoodComponent implements OnInit {
       this.goToFoodList();
     }
     , error => console.log(error));
+
+
+  }
+
+  onSubmit(){
+    this.foodService.updateFood(this.id, this.food).subscribe(data => {
+      console.log(data);
+      this.goToFoodList();
+    }, error => console.log(error));
+  }
+
+  goToFoodList(){
+    this.router.navigate(['/employees']);
+
   }
 
   goToFoodList(){
