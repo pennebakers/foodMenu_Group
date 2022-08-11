@@ -1,24 +1,21 @@
-<h2> Food List</h2>
-<table class = "table table-striped table-light">
+<h2>Foods</h2>
+<table class="table table-striped">
     <thead>
         <tr>
-            <th> Title</th>
-            <th> Image </th>
-            <th> Description</th>
-            <th> Price </th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor = "let food of foods" >
-            <td> {{ food.title }} </td>
-            <td> {{ food.image }} </td>
-            <td> {{ food.description }} </td>
-            <td> {{ food.price }} </td>
-            <td>
-                <button (click) = "updateFood(food.id)" class = "btn btn-outline-primary"> Update</button>
-                <button (click) = "deleteFood(food.id)" class = "btn btn-outline-danger" style="margin-left: 10px"> Delete</button>
-                <button (click) = "foodDetails(food.id)" class = "btn btn-outline-warning" style="margin-left: 10px"> View</button>
-            </td>
+        <tr *ngFor="let food of foods">
+            <td>{{ food.id }}</td>
+            <td>{{ food.title }}</td>
+            <td>{{ food.description }}</td>
+            <td>{{ food.price }}</td>
         </tr>
     </tbody>
 </table>
+ 
+

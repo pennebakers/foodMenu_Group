@@ -10,34 +10,37 @@ import { Observable } from 'rxjs';
 })
 export class FoodListComponent implements OnInit {
 
-  foods!: any[];
+  foods: Food[] | undefined;
 
   constructor(private foodService: FoodService,
     private router: Router) { }
 
   ngOnInit(): void {
-    this.getFoods();
+    this.getFoodsList();
   }
 
-  private getFoods() {
+  private getFoodsList(){
     this.foodService.getFoodsList().subscribe(data => {
+      console.log(data);
+      console.log("were getting foods List");
       this.foods = data;
-    });
+    })
+  }
+
+  updateFood(id: number){
+    this.router.navigate(['update-food', id]);
+  } 
+
+  deleteFood(id: number){
+    this.foodService.deleteFood(id).subscribe(data => {
+      console.log(data);
+      this.getFoodsList();
+    })
   }
 
   foodDetails(id: number){
     this.router.navigate(['food-details', id]);
   }
 
-  updateFood(id: number) {
-    this.router.navigate(['update-food', id]);
-  }
-
-  deleteFood(id: number){
-    this.foodService.deleteFood(id).subscribe( data => {
-      console.log(data);
-      this.getFoods();
-    })
-  }
 
 }
