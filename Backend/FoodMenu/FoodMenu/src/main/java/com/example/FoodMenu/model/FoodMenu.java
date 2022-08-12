@@ -20,6 +20,7 @@ import javax.persistence.*;
     public FoodMenu() {
     }
 
+
     public FoodMenu(Long id, String item, String image, String description, double price) {
         this.id = id;
         this.item = item;
@@ -27,6 +28,7 @@ import javax.persistence.*;
         this.description = description;
         this.price = price;
     }
+
 
     public String getImage() {
         return image;
