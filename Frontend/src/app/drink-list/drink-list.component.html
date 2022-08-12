@@ -1,1 +1,12 @@
-<p>drink-list works!</p>
+<h2>Drinks</h2>
+<table class="table table-striped">
+    <tbody>
+        <tr *ngFor="let drink of drinks">
+            <td><img src="{{drink.image}}" alt="{{drink.item}}"></td>
+            <td>{{ drink.item }}</td>
+            <td>{{ drink.description }}</td>
+            <td>${{ drink.price }}</td>
+        </tr>
+    </tbody>
+</table>
+ 
