@@ -8,12 +8,24 @@ import javax.persistence.*;
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         private Long id;
+        @Column
         private String item;
+        @Column
         private String description;
+        @Column
         private double price;
 
     public FoodMenu() {
     }
+
+
+    public FoodMenu(Long id, String item, String description, double price) {
+        this.id = id;
+        this.item = item;
+        this.description = description;
+        this.price = price;
+    }
+
 
     public Long getId() {
         return id;

@@ -1,4 +1,8 @@
+
 import { Component, OnInit } from '@angular/core';
+import { Food } from '../food';
+import { ActivatedRoute } from '@angular/router';
+import { FoodService } from '../food-service';
 
 @Component({
   selector: 'app-food-details',
@@ -7,9 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodDetailsComponent implements OnInit {
 
-  constructor() { }
+  id!: number
+  food!: Food
+  constructor(private route: ActivatedRoute, private foodService: FoodService) { }
 
   ngOnInit(): void {
+    this.id = this.route.snapshot.params['id'];
+
+    this.food = new Food();
+    this.foodService.getFoodById(this.id).subscribe( data => {
+      this.food = data;
+    });
   }
 
 }

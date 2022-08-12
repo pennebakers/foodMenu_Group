@@ -17,7 +17,7 @@ public class FoodMenuController {
         private FoodMenuRepository repository;
 
         @GetMapping("/foodmenu")
-    public List<FoodMenu> getAllFoodMenu() {
+        public List<FoodMenu> getAllFoodMenu() {
             return repository.findAll();
         }
 
