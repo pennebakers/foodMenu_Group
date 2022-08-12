@@ -1,1 +1,30 @@
-<p>create-food works!</p>
+<div class="col-md-6 offset-md-3">
+    <h3> Add a Food </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Name</label>
+            <input type="text" class ="form-control" id = "item"
+                [(ngModel)] = "food.item" name = "item">
+        </div> 
+        <div class="form-group">
+            <label> Description</label>
+            <input type="text" class ="form-control" id = "description"
+                [(ngModel)] = "food.description" name = "description">
+        </div>
+        <div class="form-group">
+            <label> Image</label>
+            <input type="text" class ="form-control" id = "image"
+                [(ngModel)] = "food.image" name = "image">
+        </div>
+
+        <div class="form-group">
+            <label> Price</label>
+            <input type="text" class ="form-control" id = "price"
+                [(ngModel)] = "food.price" name = "price">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

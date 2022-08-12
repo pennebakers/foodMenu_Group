@@ -1,0 +1,24 @@
+<h2> Drink list</h2>
+<table class = "table table-striped table-light">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th> Name </th>
+            <th> Description</th>
+            <th> Price </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let drink of drinks" >
+            <td><img src="{{drink.image}}" alt="{{drink.item}}"></td>
+            <td> {{ drink.item }} </td>
+            <td> {{ drink.description }} </td>
+            <td> {{ drink.price }} </td>
+            <td>
+                <button (click) = "updateDrink(drink.id)" class = "btn btn-outline-primary"> Update</button>
+                <button (click) = "deleteDrink(drink.id)" class = "btn btn-outline-danger" style="margin-left: 10px"> Delete</button>
+                <!-- <button (click) = "foodDetails(food.id)" class = "btn btn-outline-warning" style="margin-left: 10px"> View</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>

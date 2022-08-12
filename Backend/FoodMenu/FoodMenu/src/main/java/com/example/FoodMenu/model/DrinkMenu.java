@@ -1,34 +1,34 @@
 package com.example.FoodMenu.model;
 
 import javax.persistence.*;
+
 @Entity
-@Table(name = "food_menu")
-    public class FoodMenu {
+@Table(name = "drink_menu")
+public class DrinkMenu {
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.AUTO)
-        private Long id;
-        @Column
-        private String item;
-        @Column
-        private String image;
-        @Column
-        private String description;
-        @Column
-        private double price;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
+    private String item;
+    @Column
+    private String image;
+    @Column
+    private String description;
+    @Column
+    private double price;
 
-    public FoodMenu() {
+    public DrinkMenu() {
     }
 
-
-    public FoodMenu(Long id, String item, String image, String description, double price) {
+    public DrinkMenu(Long id, String item, String image, String description, double price) {
         this.id = id;
         this.item = item;
         this.image = image;
         this.description = description;
         this.price = price;
-    }
 
+    }
 
     public String getImage() {
         return image;

@@ -8,6 +8,13 @@ import { DrinkListComponent } from './drink-list/drink-list.component';
 import { FoodListComponent } from './food-list/food-list.component';
 import { MenuComponent } from './menu/menu.component';
 import { CreateFoodComponent } from './create-food/create-food.component';
+import { FormsModule } from '@angular/forms';
+import { UpdateDrinkComponent } from './update-drink/update-drink.component';
+import { AdminMenuComponent } from './admin-menu/admin-menu.component';
+import { AdminFoodComponent } from './admin-food/admin-food.component';
+import { AdminDrinkComponent } from './admin-drink/admin-drink.component';
+import { UpdateFoodComponent } from './update-food/update-food.component';
+import { CreateDrinkComponent } from './create-drink/create-drink.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +22,19 @@ import { CreateFoodComponent } from './create-food/create-food.component';
     MenuComponent,
     FoodListComponent,
     DrinkListComponent,
-    CreateFoodComponent
+    CreateFoodComponent,
+    CreateDrinkComponent,
+    UpdateDrinkComponent,
+    UpdateFoodComponent,
+    AdminMenuComponent,
+    AdminFoodComponent,
+    AdminDrinkComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

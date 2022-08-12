@@ -1,1 +1,30 @@
-<p>create-drink works!</p>
+<div class="col-md-6 offset-md-3">
+    <h3> Add a Drink </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Name</label>
+            <input type="text" class ="form-control" id = "item"
+                [(ngModel)] = "drink.item" name = "item">
+        </div> 
+        <div class="form-group">
+            <label> Description</label>
+            <input type="text" class ="form-control" id = "description"
+                [(ngModel)] = "drink.description" name = "description">
+        </div>
+        <div class="form-group">
+            <label> Image</label>
+            <input type="text" class ="form-control" id = "image"
+                [(ngModel)] = "drink.image" name = "image">
+        </div>
+
+        <div class="form-group">
+            <label> Price</label>
+            <input type="text" class ="form-control" id = "price"
+                [(ngModel)] = "drink.price" name = "price">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

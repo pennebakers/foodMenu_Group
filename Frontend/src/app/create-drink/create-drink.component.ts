@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Drink } from '../drink';
+import { DrinkService } from '../drink-service';
 import { Router } from '@angular/router';
-import { Food } from '../food';
 
 @Component({
   selector: 'app-create-drink',
@@ -9,32 +10,27 @@ import { Food } from '../food';
 })
 export class CreateDrinkComponent implements OnInit {
 
+  drink: Drink = new Drink();
   constructor(private drinkService: DrinkService,
-		private router: Router) {}
+    private router: Router) { }
 
-	food: Food = new Food();
   ngOnInit(): void {
-  this.saveDrink();
-}
+  }
 
-private saveDrink(){
-  this.drinkService.goToDrinkList().subscribe((data: any) => {
-    this.drinkService = data;
-  });
-}
+  saveEmployee(){
+    this.drinkService.createDrink(this.drink).subscribe( data =>{
+      console.log(data);
+      this.goToDrinkList();
+    },
+    error => console.log(error));
+  }
 
-drinkDetails(id: number){
-  this.router.navigate(['drink-details', id]);
-}
-
-updatedrink(id: number){
-  this.router.navigate(['update-drink', id]);
-}
-
-deletedrink(id: number){
-  this.drinkService.deletedrink(id).subscribe( (data: any) => {
-    console.log(data);
-    this.saveDrink();
-  })
-}
+  goToDrinkList(){
+    this.router.navigate(['/admin-page']);
+  }
+  
+  onSubmit(){
+    console.log(this.drink);
+    this.saveEmployee();
+  }
 }
