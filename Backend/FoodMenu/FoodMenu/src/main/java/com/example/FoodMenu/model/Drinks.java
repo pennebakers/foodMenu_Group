@@ -13,6 +13,9 @@ public class Drinks {
     private String description;
     private double price;
 
+    public Drinks() {
+    }
+
     public Long getId() {
         return id;
     }

@@ -12,6 +12,8 @@ import javax.persistence.*;
         private String description;
         private double price;
 
+    public FoodMenu() {
+    }
 
     public Long getId() {
         return id;
