@@ -17,6 +17,37 @@
     
     
   }
+
+  .bg-test{
+    background-image: linear-gradient(to bottom right, rgb(251 149 83), antiquewhite, rgb(251 149 83));
+  }
+
+
+  .logo {
+    max-width: 150px;
+    max-height: 200px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+  }
+  
+  .admin-menu{
+    margin-top: 20%;
+  }
+
+  .container-home{
+    text-align: center;
+  }
+
+  .navbar-expand-md{
+    margin-right: 10%;
+  }
+
+
+
+ 
    
   .dropdown-menu {
     background:#03727d
@@ -45,10 +76,7 @@
     z-index:123;
     padding-bottom:120px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+ 
   }
   #navbarNavDropdown.collapsing .navbar-nav,
   #navbarNavDropdown.show .navbar-nav{

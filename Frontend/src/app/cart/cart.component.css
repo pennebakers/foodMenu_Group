@@ -1,0 +1,51 @@
+
+.cart-btn{
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    border: none;
+    font-weight:bolder;
+}
+
+a{
+    color: rgb(251 149 83);
+    }
+
+
+.card{
+   height: 60vh;
+   margin: 25px;
+   padding: 25px;
+   margin-top: 15%;
+}
+
+.center{
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ transform: translate(-50%, -150%);
+ text-align: center;
+}
+
+.card-table{
+ position: relative;
+ display: flex;
+flex-direction: column;
+min-width: none;
+word-wrap: break-word;
+ background-color: #fff;
+background-clip: border-box;
+ border: 1px solid rgba(0,0,0,0.2);
+ border-radius: .25rem;
+
+}
+
+.center-btn{
+font: 14px !important;
+ margin-top: 20px !important;
+ font-weight: 400;
+ padding: 12px 72px;
+ border-radius: 3px !important;
+
+}
+

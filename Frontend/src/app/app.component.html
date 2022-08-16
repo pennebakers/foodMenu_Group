@@ -1,7 +1,9 @@
+
 <div id="mainNavigation">
   <nav role="navigation">
-    <div class="py-3 text-center border-bottom">
-      <img src="Frontend\src\assets\octo.jpeg">
+    <div class="py-3 text-center">
+      <img src="https://i.imgur.com/uWiKHoh.png" class="logo"
+      >
     </div>
   </nav>
   <div class="navbar-expand-md">
@@ -13,7 +15,7 @@
     <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" routerLinkActive="active"  aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
           <a routerLink="food-list" routerLinkActive="active" class="nav-link" >Order Now!</a>
@@ -22,28 +24,27 @@
           <a routerLink="admin-page" routerLinkActive="active" class="nav-link" >Admin Page</a>
         </li>
         
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Company
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a routerLink="food-list" routerLinkActive="active" class="nav-link" >Order Now!</a></li>
-            <li><a routerLink="admin-page" routerLinkActive="active" class="nav-link" >Admin Page</a></li>
-          </ul>
+        <li class="nav-item">
+
+          <a routerLink="add-cart" routerLinkActive="active" class="nav-link" >Shopping Cart</a>
+
         </li>
       </ul>
     </div>
   </div>
 </div>
-<img class="main-page" src="https://png.pngtree.com/back_origin_pic/05/13/42/de5ba70c9419ad600b4d88567ef570f7.jpg">
-<h1 class="text-center"> {{title}} </h1>
+
 <div class = "container">
   <router-outlet></router-outlet>
 </div>
-<footer class = "footer">
+
+
+<!-- <footer class = "footer">
   <div class = "container">
-      <span>All Rights Reserved 2022 @Food App Name</span>
+      <span>All Rights Reserved 2022 @Yummy Tummy</span>
   </div>
-</footer>
+</footer> -->
+
+
 
 

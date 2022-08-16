@@ -1,0 +1,25 @@
+.home-container{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -550%);
+    text-align: center;
+}
+
+.home-btn{
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    border: none;
+    font-weight:bolder;
+}
+
+a{
+    color: rgb(251 149 83);
+    }
+
+    .home-container{
+     background-image: linear-gradient(to bottom right, rgb(251 149 83), antiquewhite, rgb(251 149 83));
+
+    }
+

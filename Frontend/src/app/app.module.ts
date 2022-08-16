@@ -15,6 +15,10 @@ import { AdminFoodComponent } from './admin-food/admin-food.component';
 import { AdminDrinkComponent } from './admin-drink/admin-drink.component';
 import { UpdateFoodComponent } from './update-food/update-food.component';
 import { CreateDrinkComponent } from './create-drink/create-drink.component';
+import { CartComponent } from './cart/cart.component';
+import { HomeComponent } from './home/home.component';
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +32,9 @@ import { CreateDrinkComponent } from './create-drink/create-drink.component';
     UpdateFoodComponent,
     AdminMenuComponent,
     AdminFoodComponent,
-    AdminDrinkComponent
+    AdminDrinkComponent,
+    CartComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

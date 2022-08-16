@@ -1,14 +1,24 @@
-<h2>Main Dishes</h2>
-<table class="table table-striped">
-    
-    <tbody>
-        <tr *ngFor="let food of foods">
-            <td><img src="{{food.image}}" alt="{{food.item}}"></td>
-            <td>{{ food.item }}</td>
-            <td>{{ food.description }}</td>
-            <td>${{ food.price }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="food-container">
+    <h2>Main Dishes</h2>
+
+<div class="card-deck">
+        <div class="card text-center" *ngFor="let food of foods">
+            <img class="card-img-top img-fluid img-thumbnail" src="{{food.image}}" style="width: 100%; height: 15vw;"alt="{{food.item}}">
+            <div class="card-body">
+              <h5 class="card-title ">{{food.item}}</h5>
+              <p class="card-text ">{{food.description}}</p>
+              <a href="#" class="btn btn-primary" style="text-align: center;">Add To Order</a>
+            </div>
+          </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
  
 

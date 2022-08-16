@@ -1,14 +1,11 @@
 package com.example.FoodMenu.controller;
 
-import com.example.FoodMenu.model.Drinks;
 import com.example.FoodMenu.model.FoodMenu;
 import com.example.FoodMenu.repository.FoodMenuRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
