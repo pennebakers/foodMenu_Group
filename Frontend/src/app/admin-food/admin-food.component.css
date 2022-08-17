@@ -23,4 +23,7 @@ a{
     color: rgb(251 149 83);
     }
 
-
+.food-img{
+    height: 300px;
+    width: 240px;
+}

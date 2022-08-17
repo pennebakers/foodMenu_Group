@@ -22,3 +22,8 @@ h2{
     a{
         color: rgb(251 149 83);
     }
+
+    .drink-img{
+        height: 300px;
+        width: 240px;
+    }
